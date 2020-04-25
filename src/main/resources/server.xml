@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Server>
+    <Service name="Catalina">
+        <Host name="localhost" appBase="webapps" >
+            <!--
+            docBase：Web应⽤⽬录或者War包的部署路径。可以是绝对路径，也可以是相对于 Host appBase的
+            相对路径。
+            path：Web应⽤的Context 路径。如果我们Host名为localhost， 则该web应⽤访问的根路径为：
+             http://localhost:8080/web_demo。
+            -->
+            <Context docBase="demo1" path="/demo1"></Context>
+            <Context docBase="demo2" path="/demo2"></Context>
+        </Host>
+    </Service>
+</Server>
